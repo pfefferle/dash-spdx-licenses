@@ -1,0 +1,652 @@
+
+  .view-content-brainstorm-ever h2.title{
+  	background-color:#ffffff;
+	border: none;
+	font-size:14px; /* 15px */
+	padding: 3px 5px;
+
+	color:#003E69;
+	font-weight:bold;
+  }
+  .view-content-brainstorm-ever h2.title a{
+  	background-color:#ffffff;
+	border: none;
+	font-size:14px; /* 15px */
+	padding: 3px 5px;
+
+	color:#000000;
+	font-weight:normal;
+  }
+
+  div.messages /* Important messages (status, warning, and error) for the user */
+  {
+    margin: 0 1em 5px 1em;
+    border: 2px solid #ccc;
+    padding: 5px;
+    color: #000;
+    background-color: #fff;
+    font-style: italic;
+  }
+
+  div.status /* Normal priority messages */
+  {
+  }
+
+  div.warning /* Medium priority messages */
+  {
+    border-color: #ff7;
+  }
+
+  div.warning, tr.warning
+  {
+    color: #000;
+    background-color: #ffc;
+  }
+
+  div.error /* High priority messages. See also the .error declaration below. */
+  {
+    border-color: #c00;
+  }
+
+  div.error, tr.error
+  {
+    color: #900;
+    background-color: #fee;
+  }
+
+  .help /* Help text on a page */
+  {
+    margin: 1em 0;
+  }
+
+  .more-help-link /* Link to more help */
+  {
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .pager /* A list of page numbers when more than 1 page of content is available */
+  {
+    clear: both;
+    margin: 1em 0;
+    text-align: center;
+  }
+
+  .pager a, .pager strong.pager-current
+  {
+    padding: 0.5em;
+  }
+
+  .feed-icons /* The links to the RSS or Atom feeds for the current list of content */
+  {
+    margin: 1em 0;
+  }
+
+  .marker /* "New" or "Updated" marker for content that is new or updated for the current user */
+  {
+    color: #c00;
+  }
+
+  .node.node-unpublished .picture,
+  .comment.comment-unpublished .picture
+  {
+    position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+  }
+
+  .node div.links /* Wrapper for node links */
+  {
+    margin: 1em 0;
+  }
+
+  ul.links /* Taxonomy links, node links, comment links */
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.links.inline
+  {
+    display: inline;
+  }
+
+  ul.links li
+  {
+    display: inline;
+    list-style-type: none;
+    padding: 0 0.5em;
+  }
+
+/** Drupal comments **/
+  #comments /* Wrapper for all comments */
+  {
+    margin: 1em 0;
+  }
+
+  .comment div.links /* Wrapper for comment links. See also the ul.links declaration in the node section above. */
+  {
+    margin: 1em 0;
+  }
+
+/** Drupal blocks **/
+  .block /* Block wrapper */
+  {
+    margin-bottom: 1em;
+  }
+
+
+/** Miscellaneous Drupal styles **/
+  .error /* Errors that are separate from div.messages status messages (see above.) */
+  {
+    color: #c00;
+  }
+
+  .more-link /* Aggregator, blog, and forum more link */
+  {
+    text-align: right;
+  }
+
+  #user-login-form /* Drupal's default login form */
+  {
+    text-align: left;
+  }
+
+  tr.even, tr.odd /* Some tables have rows marked even or odd. See also the ".section-admin #content tr.even" declaration below. */
+  {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  li a.active /* The active item in a Drupal menu */
+  {
+    color: #000;
+  }
+
+
+/** Drupal forms **/
+  .form-item, /* Wrapper for a form element (or group of form elements) and its label */
+  .form-checkboxes,
+  .form-radios
+  {
+    margin: 1em 0;
+  }
+
+  .form-item input.error, /* Highlight the form elements that caused a form submission error */
+  .form-item textarea.error,
+  .form-item select.error
+  {
+    border: 2px solid #c00;
+  }
+
+  .form-item label /* The label for a form element */
+  {
+    display: block;
+    font-weight: bold;
+  }
+
+  .form-item label.option /* The label for a radio button or checkbox */
+  {
+    display: inline;
+    font-weight: normal;
+  }
+
+  .form-required /* The part of the label that indicates a required field */
+  {
+    color: #c00;
+  }
+
+  .form-item .description /* The descriptive help text (separate from the label) */
+  {
+    font-size: 14px;
+  }
+
+  .form-checkboxes .form-item, /* Pack groups of checkboxes and radio buttons closer together */
+  .form-radios .form-item
+  {
+    margin: 0.4em 0;
+  }
+
+  .form-submit /* The submit button */
+  {
+  }
+
+  .container-inline .form-submit
+  {
+  }
+
+  .tips /* Tips for Drupal's input formats */
+  {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+
+/** Drupal admin tables **/
+  /* We overrode these styles in html-elements.css, but restore them for the
+   * admin section of the site.
+   */
+  .section-admin #content tbody
+  {
+    border-top: 1px solid #ccc;
+  }
+
+  .section-admin #content th
+  {
+    text-align: left;
+    padding-right: 1em;
+    border-bottom: 3px solid #ccc;
+  }
+
+  .section-admin #content tbody th
+  {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .section-admin #content thead th
+  {
+    text-align: left;
+    padding-right: 1em;
+    border-bottom: 3px solid #ccc;
+  }
+
+  .section-admin #content tr.even,
+  .section-admin #content tr.odd
+  {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding: 0.1em 0.6em;
+  }
+	
+no .main .block-inner h2.title, no .panel-pane h2.title{
+	background-color:#80B2D2;
+	border: #D1D2D4 solid 1px;
+	color:#FFFFFF;
+	font-size:14px; /* 15px */
+	/*text-transform:uppercase;*/
+	padding: 3px 5px;
+}
+no .main .block-inner h2.title a, no .panel-pane h2.title a{
+	color:#FFFFFF;
+	font-size:14px; /* 15px */
+	/*text-transform:uppercase;*/
+	text-decoration:none;
+}
+no .main .block-inner ul li a, no .panel-pane ul li a{
+	color:#003E69;
+	font-weight:bold;
+	/*.panel-pane ul li, .block-inner ul li*/
+}
+
+#content_xxx .node-inner .content {
+	/*border:#D1D2D4 1px solid;*/
+	padding:0 10px 10px 0;
+	/*margin:10px 0;*/
+}
+#content_xxx .view-content-article-featured .node-inner .content{
+	border:0;
+}
+#content_xxx .view-content-article-featured .node-inner{
+	border:#D1D2D4 1px solid;
+	margin:5px 0;
+	padding:5px;
+}
+#content_xxx .panel-display .panel-panel .node-inner .content{
+	border:0;
+}
+.page-article_featured .node .node-inner{
+	background-color:#ffffff; /* #dad9a7 */
+}
+.node-inner .taxonomy .links{
+	/*background-color:#FFFFFF;*/
+}
+.field-field-external-article-link{
+	padding:5px 0;
+	margin:5px 0;
+}
+
+.block-inner .content{
+	padding:5px;
+}
+#block-block-5 .block-inner .content{
+	padding:0;
+}
+#block-block-5 .block-inner, #header .block-inner{
+	border:0;
+}
+#block-block-5{
+	position:relative;
+	top:12px;
+}
+#block-block-12 .block-inner .content{
+	padding:0;
+}
+#block-block-12 .block-inner{
+	border:0;
+}
+#block-block-28 .block-inner .content{
+	padding:0;
+}
+#block-block-28 .block-inner{
+	border:0;
+}
+#block-block-29 .block-inner .content{
+	padding:0;
+}
+#block-block-29 .block-inner, #header .block-inner{
+	border:1;
+}
+#block-block-29{
+	position:relative;
+	top:12px;
+	margin-bottom:20px;
+}
+#block-multiblock-4 .block-inner .content{
+	padding:0;
+}
+#block-multiblock-4 .block-inner{
+	border:0;
+}
+#block-multiblock-4{
+	position:relative;
+	top:12px;
+	margin-bottom:20px;
+}
+#block-multiblock-5 .block-inner .content{
+	padding:0;
+}
+#block-multiblock-5 .block-inner{
+	border:0;
+}
+#block-multiblock-5{
+	position:relative;
+	top:12px;
+	margin-bottom:20px;
+}
+#block-user-0{
+	float:right;
+}
+#block-user-0 .item-list{
+	display:none;
+}
+#block-user-0 .form-item{
+	float:left;
+	padding:5px;
+	vertical-align:top;
+}
+#block-user-0 #edit-submit{
+	position:relative;
+	top: 37px;
+}
+#pipe{
+	color:#FFFFFF;
+	text-decoration:none;
+	font-weight:bold;
+	/*text-transform:uppercase;*/
+	font-size:14px;
+}
+
+#welcomemsg{
+color:#85132c;
+font-size:30px;
+font-weight:bold;
+line-height:34px;
+margin-bottom:10px;
+text-align:center;
+}
+#welcomemsg2{
+color:#1a3558;
+font-size:12px;
+padding:0 10px 0 10px;
+}
+#welcomemsgcontainer{
+background:url('http://spdx.org/files/fronttopback.jpg') repeat top left;
+min-height:169px;
+}
+.view-content-member-spotlight ul, .view-content-member-spotlight ul li, .view-newcontent ul, .view-newcontent ul li{
+	list-style:none;
+	list-style-image:none;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.view-newcontent ul li{
+	line-height:20px;
+}
+#block-views-member_spotlight{
+	min-height:200px;
+}
+
+#content_xxx td, #content_xxx th{
+	padding:5px 5px;
+}
+.panel-pane .view-content-people-connect table{
+	display:none;
+}
+div.panel-pane div.content{
+	/*padding:5px;*/
+}
+
+.panel-panel .view-content-recentblogs ul, .panel-panel .view-content-recentblogs ul li, .panel-panel .view-content-recentblogs-nosticky ul, .panel-panel .view-content-recentblogs-nosticky ul li, .view-tip-n-trick ul, .view-tip-n-trick ul li {
+	list-style:none;
+	list-style-image:none;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.view-content-recentblogs td, .view-content-recentblogs th, .view-content-recentblogs table, .view-content-recentarticles td, .view-content-recentarticles th, .view-content-recentarticles table{
+	margin:0;
+	padding:0;
+}
+.view-tip-n-trick ul, .view-tip-n-trick ul li{
+	padding:0;
+	margin:0;
+}
+#closure-blocks .block-inner {
+	border:0;
+}
+.view-announcements .view-data-node-changed{
+	font-weight:normal;
+}
+.view-recentarticles-bottom th{
+	display:none;
+}
+.view-recentarticles .view-content .item-list ul li #onearticle #onearticletext .view-data-body{
+	color:#606060; /*000000*/
+}
+.block-inner .poll .form-item label, .view-recentblogs ul li .view-data-body{
+	color:#606060; /*000000*/
+
+/*	color:#003E69;*/
+}
+.block-inner .poll .title{
+	color:#000000;
+
+/*	color:#003E69;*/
+	font-weight:bold;
+}
+.block-inner .poll .form-item label.option{
+	color:#000000;
+}
+.block {
+	margin:0 0 5px 0;
+}
+.view-recentarticles-bottom table, .view-recentarticles-bottom tr, .view-recentarticles-bottom td{
+	background:none;
+}
+#spotlightright .view-data-field-company-value, .view-item-announcements .view-data-node-changed{
+	color:#000000;
+}
+
+
+.node-teaser h2.title{
+margin:0;
+padding:0 0 2px 0;
+border:0;
+font-size:14px;
+}
+.node-teaser .submitted{
+margin:0 0 5px 0;
+padding:0;
+border:0;
+}
+.node-teaser .taxonomy{
+margin:0;
+padding:0 0 5px 0;
+border:0;
+display:none;
+}
+.node-teaser .content p, #content_xxx .node-teaser .node-inner .content{
+margin:0;
+padding:0;
+border:0;
+
+}
+.node-teaser div.links{
+margin:0;
+padding:5px 0 0 0;
+border:0;
+}
+.node-teaser div.links a{
+font-weight:normal;
+}
+.node-teaser div.links li{
+font-size:12px;
+}
+.node-teaser{
+margin-bottom:20px;
+}
+
+.node-teaser .node-inner{
+	background-color:#ffffff; /* #DAD9A7 */
+	padding:5px;
+}
+.node-inner .submitted, .node-inner .taxonomy, .node-inner .links{
+/*	color:#003e69;*/
+	color:#000000;
+
+}
+.view-field .view-data-created{
+    white-space: nowrap;
+}
+
+.view-field-n ode_title a{
+font-size:13px;
+text-decoration:underline;
+}
+
+.view-data- title a {
+font-size:13px;
+text-decoration:underline;
+}
+
+.view-field-users_name {
+/*display:none;*/
+}
+
+.view-data-body {
+color: #606060; /*000000*/
+}
+
+tr.even, tr.odd {
+background-color: #ffffff;
+}
+
+.view-recentblogs {
+margin-top:10px;
+}
+
+
+td.view-field-node_changed {
+/*width:175px;
+display:none;*/
+
+}
+
+td.view-field-node_body {
+padding:0px;
+}
+
+.view-content-recent-articles .item-list ul li {
+list-style-type:none;
+list-style-image:none;
+}
+
+#block-block-17 .block-inner .content{
+	padding:0;
+}
+#block-block-17 .block-inner{
+	border:0;
+}
+#block-block-17{
+	position:relative;
+	top:12px;
+}
+.view-top-content .item-list ul li, .view-top-content .item-list ul{
+	list-style-image:none;
+	list-style:none;
+	list-style-type:none;
+	margin-left:0;
+	padding-left:0;
+}
+.view-top-content .item-list ul li{
+	padding-bottom:5px;
+}
+
+#block-block-10{
+	background-color:#D9E8F1;
+}
+
+.view-newblog ul li, .viewnewblog ul, .view-blogarchive ul li{
+	list-style:none;
+	list-style-image:none;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.view-newblog li, .view-blogarchive li{
+	padding-bottom:10px;
+}
+.view-brainstorm-idea .view-field-votingapi_cache_vote_points_sum_value{
+	text-align:right;
+	float:right;
+}
+.view-content-user-points tr.odd, .view-content-user-points tr.even{
+	height:100px;
+}
+.view-content-user-points th, .view-content-user-points td{
+	text-align:center;
+}
+.view-content-user-points th.view-cell-header.view-field-userpoints-points, .view-content-user-points .view-field-userpoints-points{
+	text-align:right;
+	background-color:inherit;
+}
+.view-content-user-points tr.odd{
+	background-color:#fff;
+}
+.view-content-user-points tr.even{
+	background-color:#DAE8F1;
+}
+.links li.feedapi_feed{
+	display:none;
+}
+
+
+.newcontent{
+    font-weight: normal;
+    color:#606060;
+}
+body.page-blog .view-newblog ul li{
+margin-bottom:10px;
+border-bottom: #999 2px solid;
+}
+.view-blogarchive ul li{
+margin-bottom:10px;
+border-bottom: #999 2px solid;
+}
+blockquote{
+	margin:0 40px;
+	color:#444;
+}
+
+#content_top h1.title {padding-bottom:7px; font-size:18px; }
+
+.view-recentarticles tbody{ border:0; }
