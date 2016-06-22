@@ -51,7 +51,7 @@ for item in table.find_all("tr"):
         continue
 
     print "adding toc tag for section: %s" % item_name
-    item_name = "//apple_ref/cpp/Type/" + urllib.quote(item_name, "")
+    item_name = "//apple_ref/cpp/Type/" + urllib.quote(item_name.encode('utf8'), "")
     dashAnchor = BeautifulSoup('<a name="%s" class="dashAnchor"></a>' % item_name).a
     item_link.insert(0, dashAnchor)
 
