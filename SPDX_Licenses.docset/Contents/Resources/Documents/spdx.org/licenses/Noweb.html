@@ -1,5 +1,5 @@
 <!--?xml version="1.0" encoding="utf-8"?--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:spdx="http://spdx.org/rdf/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><!-- Mirrored from spdx.org/licenses/Noweb.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 May 2017 19:33:29 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:spdx="http://spdx.org/rdf/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><!-- Mirrored from spdx.org/licenses/Noweb.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Sep 2018 12:16:58 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
 
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <link href="sites/all/themes/cpstandard/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
@@ -15,7 +15,7 @@
 
     <style type="text/css">
 
-      #page {
+      .page {
         color: #58595b;
       }
 
@@ -32,23 +32,23 @@
         color: #58595b;
       }
 
-      #page h2, h3, h4, h5 {
+      .page h2, h3, h4, h5 {
         color: #4597cb;
       }
       
-      #page h1 {
+      .page h1 {
       font-size: 2em;
       }
 
-      #page h2 {
+      .page h2 {
       font-size: 1.5em;
       }
 
-      #page p {
+      .page p {
         color: #58595b;
       }
 
-      #page th {
+      .page th {
         color: #58595b;
       }
 
@@ -59,14 +59,25 @@
       #footer-copyright {
         margin-top: 25px;
       }
+      
       .replacable-license-text {
       color: #CC0000;
       }
-
+      
+      .replacable-license-text p var {
+      color: #CC0000;
+      }
+      
       .optional-license-text {
       color: #0000cc;
       }
-
+      
+      .optional-license-text p var {
+      color: #0000cc;
+      }
+      ul, ol, li {
+      margin: 10px 0 10px 0;
+	  }
     </style>
 
   
@@ -86,7 +97,7 @@
   <div id="header">
     <div id="header-inner">
       <a href="https://spdx.org/" id="logo" rel="home" title="Home">
-        <img alt="Home" src="https://spdx.linuxfound.info/sites/cpstandard/files/logo_spdx_250.png"/>
+        <img alt="Home" src="https://spdx.org/sites/cpstandard/files/logo_spdx_250.png"/>
       </a>
       
       <div id="name-and-slogan">
@@ -130,20 +141,46 @@
       <h2 id="licenseText"><a class="dashAnchor" name="//apple_ref/cpp/Section/Text"></a>Text</h2>
 
       <div class="license-text" property="spdx:licenseText">
-      Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.
-<p>Noweb is protected by copyright. It is not public-domain software or shareware, and it is not protected by a ``copyleft'' agreement like the one used by the Free Software Foundation.
-</p>
-<p>Noweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and create derived works, provided you retain this copyright notice, but the result may not be called noweb without my written consent. 
-</p>
-<p>You may sell noweb if you wish. For example, you may sell a CD-ROM including noweb. 
-</p>
-<p>You may sell a derived work, provided that all source code for your derived work is available, at no additional charge, to anyone who buys your derived work in any form. You must give permisson for said source code to be used and modified under the terms of this license. You must state clearly that your work uses or is based on noweb and that noweb is available free of change. You must also request that bug reports on your work be reported to you.</p>
+      
+      
+         <p>Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.</p>
+
+      
+    
+      <p>Noweb is protected by copyright. It is not public-domain software or shareware, and it is not protected
+         by a ``copyleft'' agreement like the one used by the Free Software Foundation.</p>
+
+      <p>Noweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in
+         part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and
+         create derived works, provided you retain this copyright notice, but the result may not be called
+         noweb without my written consent.</p>
+
+      <p>You may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.</p>
+
+      <p>You may sell a derived work, provided that all source code for your derived work is available, at no
+         additional charge, to anyone who buys your derived work in any form. You must give permisson for said
+         source code to be used and modified under the terms of this license. You must state clearly that your
+         work uses or is based on noweb and that noweb is available free of change. You must also request that
+         bug reports on your work be reported to you.</p>
+
+    
       </div>
 
       <h2 id="licenseHeader"><a class="dashAnchor" name="//apple_ref/cpp/Section/Standard%20License%20Header"></a>Standard License Header</h2>
       <div class="license-text" property="spdx:standardLicenseHeader">
         <p style="font-style: italic">There is no standard license header for the license</p>
         
+      </div>
+      <div property="spdx:standardLicenseTemplate" style="display: none;">
+      Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.
+
+Noweb is protected by copyright. It is not public-domain software or shareware, and it is not protected by a ``copyleft'' agreement like the one used by the Free Software Foundation.
+
+Noweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and create derived works, provided you retain this copyright notice, but the result may not be called noweb without my written consent.
+
+You may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.
+
+You may sell a derived work, provided that all source code for your derived work is available, at no additional charge, to anyone who buys your derived work in any form. You must give permisson for said source code to be used and modified under the terms of this license. You must state clearly that your work uses or is based on noweb and that noweb is available free of change. You must also request that bug reports on your work be reported to you.
       </div>
 
     </div> <!-- /page -->
@@ -152,7 +189,7 @@
       <div class="gray-diagonal">
         <div class="container">
           <div id="footer-copyright">
-            <p>(c) 2016          SPDX Workgroup a Linux Foundation Collaborative Project. All Rights Reserved.        </p>
+            <p>© 2018          SPDX Workgroup a Linux Foundation Project. All Rights Reserved.        </p>
             <p>Linux Foundation is a registered trademark of The Linux Foundation. Linux is a registered <a href="http://www.linuxfoundation.org/programs/legal/trademark" title="Linux Mark Institute">trademark</a> of Linus Torvalds.</p>
             <p>Please see our <a href="http://www.linuxfoundation.org/privacy">privacy policy</a> and <a href="http://www.linuxfoundation.org/terms">terms of use</a>.</p>
           </div>
@@ -168,4 +205,4 @@
 
 
 
-</body><!-- Mirrored from spdx.org/licenses/Noweb.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 May 2017 19:33:29 GMT --></html>
+</body><!-- Mirrored from spdx.org/licenses/Noweb.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Sep 2018 12:16:58 GMT --></html>

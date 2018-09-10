@@ -1,10 +1,10 @@
 <!--?xml version="1.0" encoding="utf-8"?--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:spdx="http://spdx.org/rdf/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><!-- Mirrored from spdx.org/licenses/MirOS.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 May 2017 19:33:29 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:spdx="http://spdx.org/rdf/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><!-- Mirrored from spdx.org/licenses/MirOS.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Sep 2018 12:16:58 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
 
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <link href="sites/all/themes/cpstandard/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
 
-    <title>MirOS Licence | Software Package Data Exchange (SPDX)</title>
+    <title>MirOS License | Software Package Data Exchange (SPDX)</title>
 
     <link href="sites/all/themes/cpstandard/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
     <link href="sites/all/themes/cpstandard/css/style.css" media="all" rel="stylesheet" type="text/css"/>
@@ -15,7 +15,7 @@
 
     <style type="text/css">
 
-      #page {
+      .page {
         color: #58595b;
       }
 
@@ -32,23 +32,23 @@
         color: #58595b;
       }
 
-      #page h2, h3, h4, h5 {
+      .page h2, h3, h4, h5 {
         color: #4597cb;
       }
       
-      #page h1 {
+      .page h1 {
       font-size: 2em;
       }
 
-      #page h2 {
+      .page h2 {
       font-size: 1.5em;
       }
 
-      #page p {
+      .page p {
         color: #58595b;
       }
 
-      #page th {
+      .page th {
         color: #58595b;
       }
 
@@ -59,14 +59,25 @@
       #footer-copyright {
         margin-top: 25px;
       }
+      
       .replacable-license-text {
       color: #CC0000;
       }
-
+      
+      .replacable-license-text p var {
+      color: #CC0000;
+      }
+      
       .optional-license-text {
       color: #0000cc;
       }
-
+      
+      .optional-license-text p var {
+      color: #0000cc;
+      }
+      ul, ol, li {
+      margin: 10px 0 10px 0;
+	  }
     </style>
 
   
@@ -86,7 +97,7 @@
   <div id="header">
     <div id="header-inner">
       <a href="https://spdx.org/" id="logo" rel="home" title="Home">
-        <img alt="Home" src="https://spdx.linuxfound.info/sites/cpstandard/files/logo_spdx_250.png"/>
+        <img alt="Home" src="https://spdx.org/sites/cpstandard/files/logo_spdx_250.png"/>
       </a>
       
       <div id="name-and-slogan">
@@ -107,10 +118,10 @@
 
       <div class="breadcrumb"><a href="https://spdx.org/">Home</a> » <a href="https://spdx.org/licenses">Licenses</a></div>
 
-      <h1 property="dc:title">MirOS Licence</h1>
+      <h1 property="dc:title">MirOS License</h1>
       <div style="display:none;"><code property="spdx:deprecated">false</code></div>
       <h2><a class="dashAnchor" name="//apple_ref/cpp/Section/Full%20name"></a>Full name</h2>
-          <p style="margin-left: 20px;"><code property="spdx:name">MirOS Licence</code></p>
+          <p style="margin-left: 20px;"><code property="spdx:name">MirOS License</code></p>
 
       <h2><a class="dashAnchor" name="//apple_ref/cpp/Section/Short%20identifier"></a>Short identifier</h2>
           <p style="margin-left: 20px;"><code property="spdx:licenseId">MirOS</code></p>
@@ -130,52 +141,172 @@
       <h2 id="licenseText"><a class="dashAnchor" name="//apple_ref/cpp/Section/Text"></a>Text</h2>
 
       <div class="license-text" property="spdx:licenseText">
-      MirOS License
-<p>Copyright [YEAR] 
-<br/>
+      
+      <div class="optional-license-text">
+         <p>MirOS License</p>
+
+      </div>
+      
+         <p>Copyright [YEAR] 
+        <br/>
+
 [NAME] [EMAIL] 
-</p>
-<p>Provided that these terms and disclaimer and all copyright notices are retained or reproduced in an accompanying document, permission is granted to deal in this work without restriction, including unlimited rights to use, publicly perform, distribute, sell, modify, merge, give away, or sublicence. 
-</p>
-<p>This work is provided "AS IS" and WITHOUT WARRANTY of any kind, to the utmost extent permitted by applicable law, neither express nor implied; without malicious intent or gross negligence. In no event may a licensor, author or contributor be held liable for indirect, direct, other damage, loss, or other issues arising in any way out of dealing in the work, even if advised of the possibility of such damage or existence of a defect, except proven that it results out of said person's immediate fault when using the work as intended. 
-</p>
-<p>I_N_S_T_R_U_C_T_I_O_N_S_:_ 
-<br/>
-To apply the template(1) specify the years of copyright (separated by comma, not as a range), the legal names of the copyright holders, and the real names of the authors if different. Avoid adding text.
-</p>
-<p>R_A_T_I_O_N_A_L_E_:_ 
-<br/>
-This licence is apt for any kind of work (such as source code, fonts, documentation, graphics, sound etc.) and the preferred terms for work added to MirBSD. It has been drafted as universally usable equivalent of the "historic permission notice"(2) adapted to Europen law because in some (droit d'auteur) countries authors cannot disclaim all liabi‐ lities. Compliance to DFSG(3) 1.1 is ensured, and GPLv2 compatibility is asserted unless advertising clauses are used. The MirOS Licence is certified to conform to OKD(4) 1.0 and OSD(5) 1.9, and qualifies as a Free Software(6) and also Free Documentation(7) licence and is included in some relevant lists(8)(9)(10).
-</p>
-<p>We believe you are not liable for work inserted which is intellectual property of third parties, if you were not aware of the fact, act appropriately as soon as you become aware of that problem, seek an amicable solution for all parties, and never knowingly distribute a work without being authorised to do so by its licensors.
-</p>
-<p>R_E_F_E_R_E_N_C_E_S_:_ 
-<br/>
-(1) also at http://mirbsd.de/MirOS-Licence 
-<br/>
-(2) http://www.opensource.org/licenses/historical.php 
-<br/>
-(3) http://www.debian.org/social_contract#guidelines 
-<br/>
-(4) http://www.opendefinition.org/1.0 
-<br/>
-(5) http://www.opensource.org/docs/osd 
-<br/>
-(6) http://www.gnu.org/philosophy/free-sw.html 
-<br/>
-(7) http://www.gnu.org/philosophy/free-doc.html 
-<br/>
-(8) http://www.ifross.de/ifross_html/lizenzcenter.html 
-<br/>
-(9) http://www.opendefinition.org/licenses 
-<br/>
-(10) http://opensource.org/licenses/miros.html</p>
+      </p>
+
+      
+    
+      <p>Provided that these terms and disclaimer and all copyright notices are retained or reproduced in an
+         accompanying document, permission is granted to deal in this work without restriction, including
+         unlimited rights to use, publicly perform, distribute, sell, modify, merge, give away, or
+         sublicence.</p>
+
+      <p>This work is provided "AS IS" and WITHOUT WARRANTY of any kind, to the utmost extent permitted by
+         applicable law, neither express nor implied; without malicious intent or gross negligence. In no event
+         may a licensor, author or contributor be held liable for indirect, direct, other damage, loss, or
+         other issues arising in any way out of dealing in the work, even if advised of the possibility of such
+         damage or existence of a defect, except proven that it results out of said person's immediate fault
+         when using the work as intended.</p>
+
+    
+      <div class="optional-license-text">
+         <p>I_N_S_T_R_U_C_T_I_O_N_S_:_ 
+        <br/>
+
+To apply the template(1) specify the years of copyright (separated by comma, not as a range), the
+             legal names of the copyright holders, and the real names of the authors if different. Avoid
+             adding text. 
+      </p>
+
+         <p>R_A_T_I_O_N_A_L_E_:_ 
+        <br/>
+
+This licence is apt for any kind of work (such as source code, fonts, documentation, graphics,
+             sound etc.) and the preferred terms for work added to MirBSD. It has been drafted as
+             universally usable equivalent of the "historic permission notice"(2) adapted to Europen law
+             because in some (droit d'auteur) countries authors cannot disclaim all liabi‐ lities.
+             Compliance to DFSG(3) 1.1 is ensured, and GPLv2 compatibility is asserted unless advertising
+             clauses are used. The MirOS Licence is certified to conform to OKD(4) 1.0 and OSD(5) 1.9, and
+             qualifies as a Free Software(6) and also Free Documentation(7) licence and is included in some
+             relevant lists(8)(9)(10). 
+      </p>
+
+         <p>We believe you are not liable for work inserted which is intellectual property of third parties, if you
+         were not aware of the fact, act appropriately as soon as you become aware of that problem, seek an
+         amicable solution for all parties, and never knowingly distribute a work without being authorised to
+         do so by its licensors. 
+      </p>
+
+         <p>
+        R_E_F_E_R_E_N_C_E_S_:_
+        <br/>
+
+
+            
+</p><ul style="list-style:none">
+<li>
+                  
+<var class="replacable-license-text">(1)</var>
+            also at http://mirbsd.de/MirOS-Licence
+          </li>
+<li>
+                  
+<var class="replacable-license-text">(2)</var>
+            http://www.opensource.org/licenses/historical.php
+          </li>
+<li>
+                  
+<var class="replacable-license-text">(3)</var>
+            http://www.debian.org/social_contract#guidelines
+          </li>
+<li>
+                  
+<var class="replacable-license-text">(4)</var>
+            http://www.opendefinition.org/1.0
+          </li>
+<li>
+                  
+<var class="replacable-license-text">(5)</var>
+            http://www.opensource.org/docs/osd
+          </li>
+<li>
+                  
+<var class="replacable-license-text">(6)</var>
+            http://www.gnu.org/philosophy/free-sw.html
+          </li>
+<li>
+                  
+<var class="replacable-license-text">(7)</var>
+            http://www.gnu.org/philosophy/free-doc.html
+          </li>
+<li>
+                  
+<var class="replacable-license-text">(8)</var>
+            http://www.ifross.de/ifross_html/lizenzcenter.html
+          </li>
+<li>
+                  
+<var class="replacable-license-text">(9)</var>
+            http://www.opendefinition.org/licenses
+          </li>
+<li>
+                  
+<var class="replacable-license-text">(10)</var>
+            http://opensource.org/licenses/miros.html
+          </li>
+</ul>
+         <p></p>
+
+      </div>
+    
       </div>
 
       <h2 id="licenseHeader"><a class="dashAnchor" name="//apple_ref/cpp/Section/Standard%20License%20Header"></a>Standard License Header</h2>
       <div class="license-text" property="spdx:standardLicenseHeader">
         <p style="font-style: italic">There is no standard license header for the license</p>
         
+      </div>
+      <div property="spdx:standardLicenseTemplate" style="display: none;">
+      &lt;&lt;beginOptional&gt;&gt; MirOS License&lt;&lt;endOptional&gt;&gt;
+
+Copyright [YEAR]
+
+[NAME] [EMAIL]
+
+Provided that these terms and disclaimer and all copyright notices are retained or reproduced in an accompanying document, permission is granted to deal in this work without restriction, including unlimited rights to use, publicly perform, distribute, sell, modify, merge, give away, or sublicence.
+
+This work is provided "AS IS" and WITHOUT WARRANTY of any kind, to the utmost extent permitted by applicable law, neither express nor implied; without malicious intent or gross negligence. In no event may a licensor, author or contributor be held liable for indirect, direct, other damage, loss, or other issues arising in any way out of dealing in the work, even if advised of the possibility of such damage or existence of a defect, except proven that it results out of said person's immediate fault when using the work as intended.&lt;&lt;beginOptional&gt;&gt; I_N_S_T_R_U_C_T_I_O_N_S_:_
+
+To apply the template(1) specify the years of copyright (separated by comma, not as a range), the legal names of the copyright holders, and the real names of the authors if different. Avoid adding text.
+
+R_A_T_I_O_N_A_L_E_:_
+
+This licence is apt for any kind of work (such as source code, fonts, documentation, graphics, sound etc.) and the preferred terms for work added to MirBSD. It has been drafted as universally usable equivalent of the "historic permission notice"(2) adapted to Europen law because in some (droit d'auteur) countries authors cannot disclaim all liabi‐ lities. Compliance to DFSG(3) 1.1 is ensured, and GPLv2 compatibility is asserted unless advertising clauses are used. The MirOS Licence is certified to conform to OKD(4) 1.0 and OSD(5) 1.9, and qualifies as a Free Software(6) and also Free Documentation(7) licence and is included in some relevant lists(8)(9)(10).
+
+We believe you are not liable for work inserted which is intellectual property of third parties, if you were not aware of the fact, act appropriately as soon as you become aware of that problem, seek an amicable solution for all parties, and never knowingly distribute a work without being authorised to do so by its licensors.
+
+R_E_F_E_R_E_N_C_E_S_:_
+
+
+
+   &lt;&lt;var;name="bullet";original="(1)";match=".{0,20}"&gt;&gt; also at http://mirbsd.de/MirOS-Licence
+
+   &lt;&lt;var;name="bullet";original="(2)";match=".{0,20}"&gt;&gt; http://www.opensource.org/licenses/historical.php
+
+   &lt;&lt;var;name="bullet";original="(3)";match=".{0,20}"&gt;&gt; http://www.debian.org/social_contract#guidelines
+
+   &lt;&lt;var;name="bullet";original="(4)";match=".{0,20}"&gt;&gt; http://www.opendefinition.org/1.0
+
+   &lt;&lt;var;name="bullet";original="(5)";match=".{0,20}"&gt;&gt; http://www.opensource.org/docs/osd
+
+   &lt;&lt;var;name="bullet";original="(6)";match=".{0,20}"&gt;&gt; http://www.gnu.org/philosophy/free-sw.html
+
+   &lt;&lt;var;name="bullet";original="(7)";match=".{0,20}"&gt;&gt; http://www.gnu.org/philosophy/free-doc.html
+
+   &lt;&lt;var;name="bullet";original="(8)";match=".{0,20}"&gt;&gt; http://www.ifross.de/ifross_html/lizenzcenter.html
+
+   &lt;&lt;var;name="bullet";original="(9)";match=".{0,20}"&gt;&gt; http://www.opendefinition.org/licenses
+
+   &lt;&lt;var;name="bullet";original="(10)";match=".{0,20}"&gt;&gt; http://opensource.org/licenses/miros.html&lt;&lt;endOptional&gt;&gt;
       </div>
 
     </div> <!-- /page -->
@@ -184,7 +315,7 @@ This licence is apt for any kind of work (such as source code, fonts, documentat
       <div class="gray-diagonal">
         <div class="container">
           <div id="footer-copyright">
-            <p>(c) 2016          SPDX Workgroup a Linux Foundation Collaborative Project. All Rights Reserved.        </p>
+            <p>© 2018          SPDX Workgroup a Linux Foundation Project. All Rights Reserved.        </p>
             <p>Linux Foundation is a registered trademark of The Linux Foundation. Linux is a registered <a href="http://www.linuxfoundation.org/programs/legal/trademark" title="Linux Mark Institute">trademark</a> of Linus Torvalds.</p>
             <p>Please see our <a href="http://www.linuxfoundation.org/privacy">privacy policy</a> and <a href="http://www.linuxfoundation.org/terms">terms of use</a>.</p>
           </div>
@@ -200,4 +331,4 @@ This licence is apt for any kind of work (such as source code, fonts, documentat
 
 
 
-</body><!-- Mirrored from spdx.org/licenses/MirOS.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 May 2017 19:33:29 GMT --></html>
+</body><!-- Mirrored from spdx.org/licenses/MirOS.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Sep 2018 12:16:58 GMT --></html>

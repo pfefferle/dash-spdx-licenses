@@ -1,5 +1,5 @@
 <!--?xml version="1.0" encoding="utf-8"?--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:spdx="http://spdx.org/rdf/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><!-- Mirrored from spdx.org/licenses/OML.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 May 2017 19:33:29 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:spdx="http://spdx.org/rdf/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><!-- Mirrored from spdx.org/licenses/OML.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Sep 2018 12:16:58 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
 
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <link href="sites/all/themes/cpstandard/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
@@ -15,7 +15,7 @@
 
     <style type="text/css">
 
-      #page {
+      .page {
         color: #58595b;
       }
 
@@ -32,23 +32,23 @@
         color: #58595b;
       }
 
-      #page h2, h3, h4, h5 {
+      .page h2, h3, h4, h5 {
         color: #4597cb;
       }
       
-      #page h1 {
+      .page h1 {
       font-size: 2em;
       }
 
-      #page h2 {
+      .page h2 {
       font-size: 1.5em;
       }
 
-      #page p {
+      .page p {
         color: #58595b;
       }
 
-      #page th {
+      .page th {
         color: #58595b;
       }
 
@@ -59,14 +59,25 @@
       #footer-copyright {
         margin-top: 25px;
       }
+      
       .replacable-license-text {
       color: #CC0000;
       }
-
+      
+      .replacable-license-text p var {
+      color: #CC0000;
+      }
+      
       .optional-license-text {
       color: #0000cc;
       }
-
+      
+      .optional-license-text p var {
+      color: #0000cc;
+      }
+      ul, ol, li {
+      margin: 10px 0 10px 0;
+	  }
     </style>
 
   
@@ -86,7 +97,7 @@
   <div id="header">
     <div id="header-inner">
       <a href="https://spdx.org/" id="logo" rel="home" title="Home">
-        <img alt="Home" src="https://spdx.linuxfound.info/sites/cpstandard/files/logo_spdx_250.png"/>
+        <img alt="Home" src="https://spdx.org/sites/cpstandard/files/logo_spdx_250.png"/>
       </a>
       
       <div id="name-and-slogan">
@@ -130,16 +141,43 @@
       <h2 id="licenseText"><a class="dashAnchor" name="//apple_ref/cpp/Section/Text"></a>Text</h2>
 
       <div class="license-text" property="spdx:licenseText">
-      This FastCGI application library source and object code (the "Software") and its documentation (the "Documentation") are copyrighted by Open Market, Inc ("Open Market"). The following terms apply to all files associated with the Software and Documentation unless explicitly disclaimed in individual files.
-<p>Open Market permits you to use, copy, modify, distribute, and license this Software and the Documentation for any purpose, provided that existing copyright notices are retained in all copies and that this notice is included verbatim in any distributions. No written agreement, license, or royalty fee is required for any of the authorized uses. Modifications to this Software and Documentation may be copyrighted by their authors and need not follow the licensing terms described here. If modifications to this Software and Documentation have new licensing terms, the new terms must be clearly indicated on the first page of each file where they apply.
-</p>
-<p>OPEN MARKET MAKES NO EXPRESS OR IMPLIED WARRANTY WITH RESPECT TO THE SOFTWARE OR THE DOCUMENTATION, INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL OPEN MARKET BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DAMAGES ARISING FROM OR RELATING TO THIS SOFTWARE OR THE DOCUMENTATION, INCLUDING, WITHOUT LIMITATION, ANY INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES OR SIMILAR DAMAGES, INCLUDING LOST PROFITS OR LOST DATA, EVEN IF OPEN MARKET HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE SOFTWARE AND DOCUMENTATION ARE PROVIDED "AS IS". OPEN MARKET HAS NO LIABILITY IN CONTRACT, TORT, NEGLIGENCE OR OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.</p>
+      
+      <p>This FastCGI application library source and object code (the "Software") and its documentation (the
+         "Documentation") are copyrighted by Open Market, Inc ("Open Market"). The following terms apply to all
+         files associated with the Software and Documentation unless explicitly disclaimed in individual
+         files.</p>
+
+      <p>Open Market permits you to use, copy, modify, distribute, and license this Software and the Documentation
+         for any purpose, provided that existing copyright notices are retained in all copies and that this
+         notice is included verbatim in any distributions. No written agreement, license, or royalty fee is
+         required for any of the authorized uses. Modifications to this Software and Documentation may be
+         copyrighted by their authors and need not follow the licensing terms described here. If modifications
+         to this Software and Documentation have new licensing terms, the new terms must be clearly indicated
+         on the first page of each file where they apply.</p>
+
+      <p>OPEN MARKET MAKES NO EXPRESS OR IMPLIED WARRANTY WITH RESPECT TO THE SOFTWARE OR THE DOCUMENTATION,
+         INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN
+         NO EVENT SHALL OPEN MARKET BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DAMAGES ARISING FROM OR
+         RELATING TO THIS SOFTWARE OR THE DOCUMENTATION, INCLUDING, WITHOUT LIMITATION, ANY INDIRECT, SPECIAL
+         OR CONSEQUENTIAL DAMAGES OR SIMILAR DAMAGES, INCLUDING LOST PROFITS OR LOST DATA, EVEN IF OPEN MARKET
+         HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE SOFTWARE AND DOCUMENTATION ARE PROVIDED "AS
+         IS". OPEN MARKET HAS NO LIABILITY IN CONTRACT, TORT, NEGLIGENCE OR OTHERWISE ARISING OUT OF THIS
+         SOFTWARE OR THE DOCUMENTATION.</p>
+
+    
       </div>
 
       <h2 id="licenseHeader"><a class="dashAnchor" name="//apple_ref/cpp/Section/Standard%20License%20Header"></a>Standard License Header</h2>
       <div class="license-text" property="spdx:standardLicenseHeader">
         <p style="font-style: italic">There is no standard license header for the license</p>
         
+      </div>
+      <div property="spdx:standardLicenseTemplate" style="display: none;">
+      This FastCGI application library source and object code (the "Software") and its documentation (the "Documentation") are copyrighted by Open Market, Inc ("Open Market"). The following terms apply to all files associated with the Software and Documentation unless explicitly disclaimed in individual files.
+
+Open Market permits you to use, copy, modify, distribute, and license this Software and the Documentation for any purpose, provided that existing copyright notices are retained in all copies and that this notice is included verbatim in any distributions. No written agreement, license, or royalty fee is required for any of the authorized uses. Modifications to this Software and Documentation may be copyrighted by their authors and need not follow the licensing terms described here. If modifications to this Software and Documentation have new licensing terms, the new terms must be clearly indicated on the first page of each file where they apply.
+
+OPEN MARKET MAKES NO EXPRESS OR IMPLIED WARRANTY WITH RESPECT TO THE SOFTWARE OR THE DOCUMENTATION, INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL OPEN MARKET BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DAMAGES ARISING FROM OR RELATING TO THIS SOFTWARE OR THE DOCUMENTATION, INCLUDING, WITHOUT LIMITATION, ANY INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES OR SIMILAR DAMAGES, INCLUDING LOST PROFITS OR LOST DATA, EVEN IF OPEN MARKET HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE SOFTWARE AND DOCUMENTATION ARE PROVIDED "AS IS". OPEN MARKET HAS NO LIABILITY IN CONTRACT, TORT, NEGLIGENCE OR OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
       </div>
 
     </div> <!-- /page -->
@@ -148,7 +186,7 @@
       <div class="gray-diagonal">
         <div class="container">
           <div id="footer-copyright">
-            <p>(c) 2016          SPDX Workgroup a Linux Foundation Collaborative Project. All Rights Reserved.        </p>
+            <p>© 2018          SPDX Workgroup a Linux Foundation Project. All Rights Reserved.        </p>
             <p>Linux Foundation is a registered trademark of The Linux Foundation. Linux is a registered <a href="http://www.linuxfoundation.org/programs/legal/trademark" title="Linux Mark Institute">trademark</a> of Linus Torvalds.</p>
             <p>Please see our <a href="http://www.linuxfoundation.org/privacy">privacy policy</a> and <a href="http://www.linuxfoundation.org/terms">terms of use</a>.</p>
           </div>
@@ -164,4 +202,4 @@
 
 
 
-</body><!-- Mirrored from spdx.org/licenses/OML.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 May 2017 19:33:29 GMT --></html>
+</body><!-- Mirrored from spdx.org/licenses/OML.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Sep 2018 12:16:58 GMT --></html>
